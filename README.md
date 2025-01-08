@@ -5,4 +5,7 @@
 5. Wait. It will take time to run all the jobs.
 6. Check that jobs ran
 7. Rerun jobs that failed due to out of memory
+8. When all images have been processed, run `python extractFreeSurferMeasures.py -d /path/to/dataset/derivatives/recon-all-clinical`. Make sure there's no trailing `/`! The aggregated table of imaging phenotypes will then be in `/path/to/dataset/derivatives/recon-all-clinical_structural_stats.csv`
+
+Message @jmschabdach with questions, this is a work in process.
 
