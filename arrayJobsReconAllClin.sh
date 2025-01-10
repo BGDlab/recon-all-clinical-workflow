@@ -28,6 +28,8 @@ if [ ! -d $OUTDIR ] ; then
     python convert_nifti_datatype.py -i $INFN -o $OUTDIR/input.nii.gz
     # Run recon-all-clinical
     time recon-all-clinical.sh $OUTDIR/input.nii.gz $SUBJID 4 $OUTDIR
+    chmod g+w $OUTDIR
+    chmod g+w -R $OUTDIR
     echo "Job finished running!"
 
 else 
